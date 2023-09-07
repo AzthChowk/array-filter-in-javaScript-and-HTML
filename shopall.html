@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YOKTO PRINTERS</title>
+    <!-- Style Css -->
+    <link rel="stylesheet" href="styles/generalstyle.css" />
+    <link rel="stylesheet" href="styles/indexstyle.css" />
+    <link rel="stylesheet" href="styles/shopall.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="mw-container header-shopall">
+      <h1>All Products</h1>
+    </div>
+    <!-- All Products -->
+    <div class="mw-container">
+      <div class="product-filter-btn">
+        <button
+          class="primary-btn fltr-btn"
+          onclick="filterProductFunction('businesscard')"
+        >
+          Business Card only
+        </button>
+        <button
+          class="primary-btn fltr-btn"
+          onclick="filterProductFunction('marketingproducts')"
+        >
+          Marketing Product only
+        </button>
+        <button
+          class="primary-btn fltr-btn"
+          onclick="filterProductFunction('officestationeries')"
+        >
+          Office Stationeries only
+        </button>
+        <button
+          class="primary-btn fltr-btn"
+          onclick="filterProductFunction('packaging')"
+        >
+          Packaging Products only
+        </button>
+        <button
+          class="primary-btn fltr-btn"
+          onclick="filterProductFunction('calendar')"
+        >
+          Calendar only
+        </button>
+
+        <button class="primary-btn fltr-btn" onclick="clearAll()">Reset</button>
+        <div class="col-4 product-grid js-product-grid"></div>
+      </div>
+    </div>
+
+    <script src="js/productslist.js"></script>
+    <script src="js/shopall.js"></script>
+  </body>
+</html>
